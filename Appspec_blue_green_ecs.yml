@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:111222333444:task-definition/my-task-definition-family-name:1"
+        TaskDefinition: "arn:aws:ecs:ap-south-1:832669837445:task-definition/task:1"
         LoadBalancerInfo:
           ContainerName: "SampleApplicationName"
           ContainerPort: 80
@@ -11,8 +11,8 @@ Resources:
         PlatformVersion: "LATEST"
         NetworkConfiguration:
           AwsvpcConfiguration:
-            Subnets: ["subnet-1234abcd","subnet-5678abcd"]
-            SecurityGroups: ["sg-12345678"]
+            Subnets: ["subnet-0a1e48ef7671e6bdb - ap-south-1a","subnet-0c00f2cd545b2d81a - ap-south-1b"]
+            SecurityGroups: ["sg-012cdaf826d0f28c0"]
             AssignPublicIp: "ENABLED"
         CapacityProviderStrategy:
           - Base: 1
